@@ -1,20 +1,311 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="assets/css/estilo.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/libs/fontawesome/css/all.css">
     <title>Restaurante Bom Sabor</title>
-  </head>
-  <body>
-    <h1>Bem vindo(a) ao nosso site</h1>
-  </body>
+</head>
+<body>
+    <div onclick="scrollTopo()" class="scrollButton">
+        <i class="fas fa-angle-double-up"></i>
+    </div><!--botão de scroll-->
+
+    <!-- INICIO DA SEÇÃO DE TOPO DO SITE -->
+    <header>
+        <div class="container"><!--inicio do container-->
+            <div class="topo"><!--inicio topo-->
+                <div class="item-topo">
+                    <i class="fas fa-map-marker-alt"></i> 
+                    Rua Vicente Borges 100, Palmeirante-TO
+                </div>
+                <div class="item-topo">
+                    <i class="fas fa-phone"></i> 
+                    (63) 99244-8880
+                </div>
+                <div class="item-topo">
+                    <a target="_blank" href="https://www.facebook.com/edimilson.franciscodequeiroz/"><i class="fab fa-facebook"></i></a> 
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div><!-- fim topo-->
+        </div><!--Fim do container-->
+    </header>
+    <!-- FINAL DA SEÇÃO TOPO -->
+
+    <!-- INICIO DA SEÇÃO DE MENU DO SITE -->
+    <nav>
+        <div class="container">
+            <div class="menu">
+                <div class="logo">
+                    <img src="assets/imagens/logo.png">
+                </div>
+                <div class="mobile"><i class="fas fa-bars"></i></div>
+                <ul class="menu__desktop">
+                    <li><a>Home</a></li>
+                    <li><a href="#cardapio">Cardápio</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <ul class="menu__mobile">
+                    <li><a>Home</a></li>
+                    <li><a href="#cardapio">Cardápio</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div><!--menu-->
+        </div><!--container-->
+    </nav>
+    <!-- FIM DA SEÇÃO DE MENU -->
+
+    <!-- INICIO DA SEÇÃO BANNER -->
+    <section class="banner">
+        <div class="texto__banner">
+            <h2>Bem-vindo(a) ao<br> ao nosso restaurante!</h2>
+            <p>AQUI A COMIDA É SEMPRE FEITA COM CARINHO</p>
+        </div>
+    </section><!--banner-->
+    <!-- FIM DA SEÇÃO BANNER -->
+
+    <!--INICIO DA SEÇÃO SOBRE -->
+    <section id="sobre" class="sobre">
+        <div class="sobre__container">
+            <div class="titulo__sessao">
+                <h2>Nossa História</h2>
+            </div><!--titulo__sessao-->
+            <div class="texto__sobre">
+                <p>
+                    A ideia da criação do restaurante "Bom Sabor"
+                    nasceu em 2007 quando dona Tereza preparava
+                    pratos típicos da Bahia para seus familiares que
+                    achavam sua comida muito saborosa, então, dona
+                    Tereza com ajuda de seus filhos montou um
+                    restaurante que foi fazendo cada vez mais sucesso.
+                </p>
+            </div><!--texto__sobre-->
+        </div><!--sobre__container-->
+    </section><!--sobre-->
+    <!-- FIM DA SEÇÃO SOBRE-->
+
+    <!-- INICIO DA SEÇÃO CARDÁPIO -->
+    <section id="cardapio" class="cardapio">
+        <div class="cardapio__container">
+            <div class="cardapio__titulo">
+                <h2>CARDÁPIO</h2>
+                <p>(Pratos principais)</p>
+            </div><!--cardapio__titulo-->
+            <div class="cardapio__pratos">
+                <div class="prato__single">
+                    <div class="imagem__prato">
+                        <img height="100%" width="100%" src="assets/imagens/acaraje.png" alt="">
+                    </div><!--imagem__prato-->
+                    <div class="descricao__prato">
+                        <h3>ACARAJÉ</h3>
+                        <p>Massa de feijão fradinho, cebola, sal e azeite de dendê</p>
+                    </div><!--descrição__prato-->
+                </div><!--prato__single-->
+                <div class="prato__single">
+                    <div class="imagem__prato">
+                        <img width="100%" height="100%" src="assets/imagens/moqueca-baiana.png" alt="">
+                    </div><!--imagem__prato-->
+                    <div class="descricao__prato">
+                        <h3>MUQUECA BAIANA</h3>
+                        <p>
+                            Peixe branco, alho, limão, cebola,
+                            tomate, pimentão vermelho,
+                            coentro, leite de coco, azeite de
+                            dendê e sal.
+                        </p>
+                    </div><!--descrição__prato-->
+                </div><!--prato__single-->
+                
+            </div><!--cardapio__pratos-->
+            <div class="cardapio__pratos">
+                <div class="prato__single">
+                    <div class="imagem__prato">
+                      <img height="100%" width="100%" src="assets/imagens/vatapá.png" alt="">
+                    </div><!--imagem__prato-->
+                    <div class="descricao__prato">
+                        <h3>VATAPÁ</h3>
+                        <p>
+                            Pão, camarão, fubá, gengibre, pimenta-malagueta, amendoim, cravo, 
+                            castanha de caju, leite desnatado, azeite de oliva, cebola, alho e tomate
+                        </p>
+                    </div><!--descrição__prato-->
+                </div><!--prato__single-->
+                <div class="prato__single">
+                    <div class="imagem__prato">
+                        <img height="100%" width="100%" src="assets/imagens/sarapatel-de-bode.png" alt="">
+                    </div><!--imagem__prato-->
+                    <div class="descricao__prato">
+                        <h3>SARAPATEL DE BODE</h3>
+                        <p>
+                            Cebola, azeite, miúdos, limão,
+                            pimentão vermelho, coentro, tomate,
+                            sal, colorau, alho e figado de bode.
+                        </p>
+                    </div><!--descrição__prato-->
+                </div><!--prato__single-->
+                
+            </div><!--cardapio__pratos-->
+            <div class="descricao__cardapio">
+                <h2>BEBIDAS</h2>
+            </div>
+            <div class="cardapio__bebidas">
+                <div class="prato__single">
+                    <div class="imagem__prato">
+                      <img height="100%" width="100%" src="assets/imagens/cerveja.png" alt="">
+                    </div><!--imagem__prato-->
+                    <div class="descricao__prato">
+                        <h3>CERVEJA</h3>
+                        <p>
+                            Long neck
+                            (Itaipava, Original, Schin e Skol).
+                            Garrafa (600ml)
+                            (Original e Skol).
+                            Lata (350ml)
+                            (Devassa, Itaipava, Schin e Skol).
+                        </p>
+                    </div><!--descrição__prato-->
+                </div><!--prato__single-->
+                <div class="prato__single">
+                    <div class="imagem__prato">
+                        <img height="100%" width="100%" src="assets/imagens/sucos.png" alt="">
+                    </div><!--imagem__prato-->
+                    <div class="descricao__prato">
+                        <h3>SUCOS</h3>
+                        <p>
+                            Abacaxi, goiaba, laranja e umbu.
+                        </p>
+                    </div><!--descrição__prato-->
+                </div><!--prato__single-->
+            </div><!--cardapio__bebidas-->
+            <div class="cardapio__bebidas">
+                <div class="prato__single">
+                    <div class="imagem__prato">
+                      <img height="100%" width="100%" src="assets/imagens/refrigerante.png" alt="">
+                    </div><!--imagem__prato-->
+                    <div class="descricao__prato">
+                        <h3>REFRIGERANTES</h3>
+                        <p>
+                            Garrafa (1 litro)
+                            (Coca-cola, Pepsi e Guaraná).
+                            Lata (350ml)
+                            (Coca-cola, Pepsi, Guaraná e Fnata).
+                        </p>
+                    </div><!--descrição__prato-->
+                </div><!--prato__single-->
+                <div class="prato__single">
+                    <div class="imagem__prato">
+                        <img height="100%" width="100%" src="assets/imagens/outros.png" alt="">
+                    </div><!--imagem__prato-->
+                    <div class="descricao__prato">
+                        <h3>OUTROS</h3>
+                        <p>
+                            Água com gás, água sem gás,
+                            caipirinha e vinho.
+                        </p>
+                    </div><!--descrição__prato-->
+                </div><!--prato__single-->
+            </div><!--cardapio__bebidas-->
+           
+        </div><!--cardapio__container-->
+    </section><!--cardapio-->
+    <!-- FIM DA SEÇÃO DE CARDÁPIO -->
+
+    <!-- INICIO DA SEÇÃO DE CONTATO -->
+    <section id="contato" class="contato">
+        <div class="contato__container">
+            <h2>Contato</h2>
+            <div class="contato__wrapper">
+                <div class="mapa">
+                    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=745&amp;height=350&amp;hl=en&amp;q=Rua%20Vicente%20Borges%20Palmeirante+(housetec)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='https://www.symptoma.pt/pt/info/covid-19#info'>SARS-CoV-2</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=AIzaSyD95R-FdNYUS3sexu3SpXQdvgXf1f_ZhvM'></script>
+                </div><!--mapa-->
+                <div class="form__contato">
+                    <form>
+                        <input type="text" name="nome" placeholder="Nome completo">
+                        <input type="email" name="email" placeholder="Digite seu e-mail">
+                        <textarea placeholder="Digite sua mensagem" name="mensagem" cols="25" rows="6"></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div><!--form__contato-->
+            </div><!--contato__wrapper-->
+        </div><!--contato__container-->
+    </section><!--contato-->
+    <!-- FIM DA SEÇÃO DE CONTATO -->
+
+    <!-- INICIO DA SEÇÃO FOOTER -->
+   <footer>
+       <div class="info">
+           <div class="info__item">
+                <h2>ACEITAMOS:</h2>
+               <div class="info__cartoes">
+                    <div class="row">
+                        <div class="cartao">
+                            <img height="100%" width="100%" src="assets/imagens/imagem-master-card.png" alt="">
+                        </div>
+                        <div class="cartao">
+                            <img height="100%" width="100%" src="assets/imagens/imagem-elo.png" alt="">
+                        </div>
+                        <div class="cartao">
+                            <img height="100%" width="100%" src="assets/imagens/imagem-hipercard.png" alt="">
+                        </div>
+                    </div><!--row-->
+                    <div class="row">
+                        <div class="cartao">
+                            <img height="100%" width="100%" src="assets/imagens/imagem-america-express.png" alt="">
+                        </div>
+                        <div class="cartao">
+                            <img height="100%" width="100%" src="assets/imagens/imagem-pix.png" alt="">
+                        </div>
+                        <div class="cartao">
+                            <img height="100%" width="100%" src="assets/imagens/imagem-visa.png" alt="">
+                        </div>
+                    </div><!--row-->
+               </div><!--info__cartoes-->
+           </div><!--info__item-->
+           <div class="info__item align-left">
+                <h2>FALE CONOSCO</h2>
+                <p><i class="fas fa-phone"></i> (63) 99244-8880</p>
+                <p><i class="fas fa-envelope"></i> edimilsonqueiroz681@gmail.com</p>
+           </div><!--info__item-->
+           <div class="info__item">
+                <h2>HORÁRIOS</h2>
+                <div class="row d-flex flex__colunm">
+                    <div class="horarios">
+                        <h3>SEGUNDA À QUINTA</h3>
+                        <p>Almoço: 12:00 às 15:00</p>
+                        <p>Jantar: 19:30 às 23:00</p>
+                    </div><!--horarios-->
+                    <div class="horarios">
+                        <h3>SÁBADO</h3>
+                        <p>Almoço: 12:00 às 16:00</p>
+                        <p>Jantar: 19:30 às 23:00</p>
+                    </div><!--horarios-->
+                </div><!--row-->
+                <div class="row d-flex flex__colunm">
+                    <div class="horarios">
+                        <h3>SEXTA-FEIRA</h3>
+                        <p>Almoço: 12:00 às 16:00</p>
+                        <p>Jantar: 19:30 às 23:30</p>
+                    </div><!--horarios-->
+                    <div class="horarios">
+                        <h3>DOMINGO</h3>
+                        <p>Almoço: 12:00 às 16:00</p>
+                        <p>Jantar: Não funciona</p>
+                    </div><!--horarios-->
+                </div><!--row-->
+           </div><!--info__item-->
+       </div><!--info-->
+        <div class="autor">
+            <a href="#">Desenvolvido por: Edimilson Queiroz</a>
+        </div><!--autor-->
+   </footer><!--footer-->
+   <!-- FIM DA SEÇÃO FOOTER -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="assets/js/menu.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
 </html>
-
-
-
-
-
-
-
-
-
-
