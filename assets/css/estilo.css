@@ -1,0 +1,659 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+.scrollButton{
+    display: none;
+    position: fixed;
+    color:#e1d0a5;
+    text-align: center;
+    line-height: 70px;
+    font-size: 35px;
+    bottom: 20px;
+    right:20px;
+    height: 70px;
+    width: 70px;
+    border-radius: 35px;
+    background-color: #764c26;
+    z-index: 100;
+    cursor: pointer;
+}
+
+/* Inicio da estilização do topo do site */
+
+.container{
+    width:80%;
+    max-width: 80%;
+    margin:0 auto;
+}
+
+header{
+    background-color: #764c26;
+    width: 100%;
+}
+
+.topo{
+    display: flex;
+    align-items: center;
+}
+
+.topo .item-topo{
+    width: 33.3%;
+    text-align: center;
+    color:#e1d0a5;
+    font-size: 25px;
+    padding:25px 0px;
+}
+
+.topo .item-topo a{
+    color:#e1d0a5;
+    margin:0px 5px;
+}
+
+.topo .item-topo i{
+    font-size: 30px;
+}
+/* Fim da estilização do topo do site */
+
+/* Inicio da estilização do menu do site */
+
+nav{
+    background-color:#311c12;
+    width: 100%;
+}
+
+nav .menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .menu .mobile{
+    display: flex;
+    align-items: center;
+    display: none;
+    font-size: 50px;
+    color:#e1d0a5;
+}
+
+.menu .logo img{
+    width: 300px;
+}
+
+.menu .menu__desktop{
+    display: flex;
+    color:#e1d0a5;
+    list-style: none;
+}
+
+
+
+.menu .menu__desktop li a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    padding:0px 20px;
+    font-size: 23px;
+    font-weight: bold;
+    text-decoration: none;
+    color:#e1d0a5;
+}
+
+.menu .menu__desktop li:hover{
+    background-color: #41250d;
+    text-decoration: underline;
+}
+
+.menu .menu__mobile{
+    display: none;
+    position: absolute;
+    text-align: center;
+    margin-top: 140px;
+    width: 100%;
+    background-color: #4d2807;
+    color:#e1d0a5;
+    list-style: none;
+    top:150px;
+    z-index: 99;
+}
+
+.menu .menu__mobile li{
+    padding: 10px 0px;
+    border-bottom: 1px solid  #e1d0a5;
+}
+
+.menu .menu__mobile li a{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    cursor:pointer;
+    color:#e1d0a5;
+    text-decoration: none;
+}
+
+/* FIM DA ESTILIZAÇÃO DO MENU */
+
+/* INICIO DA ESTILIZAÇÃO DO BANNER */
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    max-height: 450px;
+    background-image: url('../imagens/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+.texto__banner{
+    margin-top:-20px;
+    background-color: #311c12;
+    color: #e1d0a5;
+    text-align: center;
+    padding:30px;
+    opacity: 0.9;
+}
+
+.texto__banner h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+/* FINAL ESTILIZAÇÃO DO BANNER */
+
+/* INICIO ESTILIZAÇÃO DA SEÇÃO SOBRE A EMPRESA */
+
+.sobre{
+    display: flex;
+    align-items: center;
+    background-image: url('../imagens/banner-sobre.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 840px;
+}
+
+.sobre__container{
+    margin-left: 30px;
+    width: 60%;
+    height: 500px;
+    background-color: #311c12;
+    border-radius: 20px;
+    opacity: 0.9;
+
+}
+
+.sobre__container .titulo__sessao{
+    text-align: center;
+    background-color: #764c26;
+    color:#e1d0a5;
+    width: 50%;
+    margin:0 auto;
+    padding: 30px 0px;
+    font-size: 30px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+.texto__sobre{
+    margin-top:35px
+}
+
+.texto__sobre p{
+    color:#e1d0a5;
+    text-align: justify;
+    font-size: 25px;
+    padding: 20px;
+}
+
+/* FINAL DA ESTILIZAÇÃO DA SEÇÃO SOBRE */
+
+/*----------------------------------------------------------------------------------*/
+
+/* INICIO DA ESTILIZAÇÃO DA SEÇÃO CARDÁPIO */
+
+.cardapio{
+    background-color: #311c12;
+    color:#e1d0a5;
+}
+
+.cardapio__titulo{
+    background-color: #764c26;
+    width: 50%;
+    margin:0 auto;
+    text-align: center;
+    padding: 30px 0px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+.cardapio__titulo h2{
+    font-size: 40px;
+}
+
+.cardapio__titulo p{
+    font-size: 20px;
+}
+
+.cardapio__pratos{
+    display: flex;
+    justify-content: center;
+    padding:30px 20px;
+}
+
+.prato__single{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prato__single .imagem__prato{
+    width: 40%;
+    background-color: #CCC;
+    border:0;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.prato__single .imagem__prato img{
+    border-radius: 100px;
+}
+
+.prato__single .descricao__prato{
+    width: 60%;
+    padding: 0px 15px;
+}
+
+.prato__single .descricao__prato h3{
+    font-size: 30px;
+    color:#bb7a40;
+}
+
+.prato__single .descricao__prato p{
+    font-size: 22px;
+    margin-top:10px
+}
+
+.cardapio__bebidas{
+    display: flex;
+    justify-content: center;
+    padding:30px 20px;
+}
+
+.descricao__cardapio{
+    width: 50%;
+    margin:20px 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 15px 10px;
+    background-color:#764c26;
+    font-size: 25px;
+    text-align: center;
+}
+
+/* FIM DA ESTILIZAÇÃO DA SEÇÃO CARDÁPIO */
+
+/* INICIO DA ESTILIZAÇÃO DA SEÇÃO CONTATO */
+
+.contato{
+    background-image: url('../imagens/background-contato.png');
+    padding-top: 70px;
+}
+
+.contato .contato__container{
+    height: 500px;
+    width: 95%;
+    background-color: #311c12;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.contato__wrapper{
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.contato .contato__container h2{
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    width: 50%;
+    background-color:#764c26;
+    color:#e1d0a5;
+    font-size: 30px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-transform: uppercase;
+}
+
+.contato .contato__container .mapa{
+    width: 50%;
+    background-color:#CCC;
+    height: 320px;
+}
+
+.mapa a{
+    text-decoration: none;
+    color:#e1d0a5;
+}
+
+.contato .contato__container .form__contato{
+    width: 50%;
+    height: 320px;
+}
+
+.form__contato form{
+    padding:0px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__contato form input{
+    height: 50px;
+    margin-bottom: 15px;
+    padding-left: 5px;
+    outline: 0;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.form__contato form textarea{
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: 0;
+    padding: 8px;
+}
+
+.form__contato form button{
+    height: 50px;
+    width: 150px;
+    border:0;
+    outline: 0;
+    border-radius:5px;
+    background-color:#764c26;
+    color: #FFF;
+    font-size: 18px;
+}
+
+/* FIM DA ESTILIZAÇÃO DA SEÇÃO CONTATO */
+
+/* INICIO DA ESTILIZAÇÃO DA SEÇÃO FOOTER */
+
+footer{
+    background-color:#764c26;
+    padding-top: 30px;
+}
+
+.info{
+    background-color: #311c12;
+    margin:0 auto;
+    display: flex;
+    color:#e1d0a5;
+}
+
+.info__item{
+    width: 33.3%;
+    text-align: center;
+    padding: 20px 30px;
+    font-size: 18px;
+}
+
+.info__item h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.info__item .info__cartoes{
+    display: flex;
+    flex-direction: column;
+}
+
+.info__item .info__cartoes .row{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.row .cartao{
+    width: 33.3%;
+}
+
+.horarios h3{
+    margin-bottom: 10px;
+}
+
+.row .horarios{
+    padding: 15px;
+}
+
+.autor{
+    background-color:#4d2807;
+    text-align: center;
+    padding: 30px 2%;
+}
+
+.autor > a{
+    text-decoration: none;
+    color: #e1d0a5;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.d-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.align-left{
+    text-align: left;
+}
+
+/* FIM DA ESTILIZAÇÃO DO FOOTER */
+
+
+/* INICIO DO RESPONSIVO */
+
+@media screen and (max-width:1100px) {
+    .menu .menu__mobile{
+        display: none;
+    }
+    .info{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .info .info__item{
+        width: 100%;
+    }
+
+    .info .info__item .row{
+        text-align: center;
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .menu .menu__mobile{
+        display: none;
+        margin-top: 115px;
+    }
+
+    .container{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .topo {
+        flex-direction: column;
+    }
+
+    .topo .item-topo{
+        width: 100%;
+        max-width: 100%;
+        padding:10px 0px !important;
+    }
+
+    .menu .menu__desktop{
+        display:none;
+    }
+
+    nav .menu .mobile{
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 45px;
+      width: 50%;
+    }
+
+    .sobre{
+        display: flex;
+        justify-content: center;
+    }
+    .sobre__container{
+        margin-left: 0px;
+        width: 90%;
+    }
+
+    .cardapio__titulo{
+        margin-bottom: 20px;
+    }
+
+    .cardapio__pratos{
+       flex-direction: column;
+       width: 100%;
+       padding: 0px;
+       padding-left: 20px;
+    }
+
+    .prato__single{
+        width: 100%;
+        padding: 20px 0px;
+    }
+
+    .cardapio__bebidas{
+       flex-direction: column;
+       width: 100%;
+       padding: 0px;
+       padding-left: 20px;
+    }
+
+    .contato .contato__container{
+        height: auto;
+    }
+
+    .contato__wrapper{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .form__contato{
+        width: 100% !important;
+        margin-bottom: 30px;
+    }
+
+    .mapa{
+        width: 100% !important;
+        margin:15px 0px;
+    }
+
+   
+}
+
+
+@media screen and (max-width:500px) {
+
+    .contato .contato__container h2{
+        font-size: 25px !important;
+    }
+
+    .titulo__sessao h2{
+        font-size: 30px;
+    }
+
+    .cardapio__titulo h2{
+        font-size: 30px;
+    }
+
+    .menu .menu__mobile{
+        margin-top: 110px;
+    }
+
+    .flex__colunm{
+        flex-direction: column;
+    }
+
+    .form__contato form{
+        padding: 0;
+    }
+
+    .sobre__container{
+        height: auto;
+    }
+
+    
+    .cardapio__pratos{
+        padding: 0;
+        width: 100%;
+    }
+
+    .cardapio__bebidas{
+        padding: 0;
+    }
+    .prato__single{
+        margin: 0;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .prato__single .descricao__prato{
+        text-align: center;
+        width: 100%;
+    }
+
+    .imagem__prato .descricao__prato h3{
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 470px) {
+    .menu .menu__mobile{
+        margin-top: 126px;
+    }
+
+    .mobile{
+        padding: 20px 0px;
+    }
+
+    .menu .logo img{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
